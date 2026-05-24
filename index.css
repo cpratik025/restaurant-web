@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    font-family: "Smythe", sans-serif;
+    font-weight: 400;
+    background-color: whitesmoke;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.hero{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    color: white;
+    background-image: url('./img/fresh-tasty-homemade-burger-wooden-table_147620-1307.avif');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+h1{
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+h2{margin-left: 10px;}
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-div{
+    border-bottom: 1px black solid;
+    display: flex;
+    
+}
+
+.emoji-div{
+    width: 10%;
+}
+
+.emoji{
+    float: left;
+    font-size: 5em;
+    margin: 0;
+    padding: 10px 0;    
+}
+
+.item-details{
+    width: 70%;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.item-name{
+    font-weight: 900;
+    margin-left: 0;
+}
+
+.item-ingredients{
+    color: grey;
+    font-weight: 400;
+}
+
+
+.add-item{
+    border: 2px grey solid;
+    text-align: center;
+    margin-top:50px;
+    margin-left: 60px;
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    color:#3C3C3C;
+    background-color: #DEDEDE;
+}
+
+.order-list{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.order-display{
+    display: none;
+}
+
+.order-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order-items p{
+    width: 30%;
+}
+
+.total-display{
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+}
+
+.total-display p{
+    margin-top: 0px;
+    padding: 0 5%;
+    margin-bottom: 5px;
+}
+
+.checkout{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+.checkout-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between the SVG and the text */
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: lightgreen;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+    
+span{
+    margin: 5px;
+    color: grey;
+    text-decoration: underline;
+    font-size: 0.5em;
+    cursor: pointer;
+}
+
+.total-hidden{display: none;}
+
+.form-container{
+    position: fixed;
+    z-index: 1000;
+    left: 35%;
+    top: 15%;
+    text-align: center;
+    width: 524px;
+    height: 542px;
+    background-color: ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+form p{
+    display: inline-block;
+    font-size: 2.5em;
+}
+.close{
+    float:right;
+    font-size: 1.5em;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: grey;
+    color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form-details-text{
+    margin-top: 10px;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    text-align: center;
+    width: 80%;
+    height: 60px;
+    margin: 20px 20px;
+}
+
+#pay-btn{
+    margin-top: 20px;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #16DB99;
+}
+
+.form-container-hide{
+    display: none;
+}
+
+#thank-message{
+    font-family: "Smythe", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    background-color: #9bf1c9;
+    color: #065F46;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.message{
+    padding: 8px 4px;
+}
+
+.hide-message{
+    display: none;
+}

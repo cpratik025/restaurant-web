@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <title>John's Diner</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>John's Diner</h1>
+        <h2>Enjoy food made for moment's</h2>
+    </div> 
+    <div class="items" id="items-list">
+    </div>
+    <div class="order-list order-display" id="order-list">
+        <h3>Your Order</h3>
+    </div> 
+    <div class="total-display total-hidden" id="order-total">
+        <p class="total">Total</p>
+    </div>
+    <div class='total-hidden checkout' id="checkout-div">
+        <button class='checkout-btn' data-checkout="checkout"><img src="./img/shopping-cart-icon.png" class="cart-svg" alt="Search" width="25" height="25">Checkout</button>
+    </div>
+    <div class="form-container form-container-hide" id="myForm">
+        <form id="checkout-form">
+            <p class="form-details-text">Enter Your Details Here:</p>
+            <p class="close" data-close="close" id="close">X</p>
+            <div class="label">
+                <input type="text" id="customer-name" placeholder="Pratik Chorsiya" pattern="^[a-zA-Z]+(?:\s+[a-zA-Z]+)+$" required>
+                <input type="text" id="card" placeholder="0000-0000-0000-0000" inputmode="numeric" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" minlength="16" maxlength="19" required>
+                <input type="text" id="cvv" placeholder="Enter Your Card CVV" inputmode="numeric" pattern="\d{3,4}" minlength="3" maxlength="4" required>
+                <button id="pay-btn" data-pay="pay">Proceed To Pay</button>
+            </div>
+        </form>
+    </div>
+    <div class='hide-message' id="thank-message">
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
